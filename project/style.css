@@ -1,0 +1,65 @@
+body {
+  margin: 0; }
+  body h1 {
+    display: flex;
+    justify-content: center;
+    font: 100% "Indie Flower", cursive;
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
+    padding-top: 20px; }
+  body #hello {
+    color: #fff; }
+  body h2 {
+    display: flex;
+    flex-direction: row;
+    font: 100% "Indie Flower", cursive;
+    color: #fff;
+    margin: 0;
+    font-size: 30px;
+    padding-top: 20px; }
+  body #overview {
+    width: 300px;
+    color: #fff; }
+  body .lead-banner {
+    background: url("images/blackwhite.jpeg") no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; }
+  body .background2 {
+    background-image: url("images/goldbrown.png") no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed; }
+  body .circle-pix img {
+    display: inline-block;
+    float: right;
+    margin-top: -270px;
+    height: 253px;
+    width: 174px;
+    margin-right: 200px;
+    border-top-left-radius: 10% 10%;
+    border-top-right-radius: 10% 10%;
+    border-bottom-left-radius: 10% 10%;
+    border-bottom-right-radius: 10% 10%; }
+  body .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding-right: 10px;
+    padding-left: 10px; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  background-color: #694848;
+  padding: 15px;
+  margin: 0; }
+nav a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
