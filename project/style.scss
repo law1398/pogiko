@@ -1,81 +1,129 @@
-$font-stax: 'Indie Flower', cursive;
-$primary-color: #333;
-$font-appro: 'Oswald', sans-serif;
+$font-stax: 'Lora',
+serif;
+$primary-color: 431D25;
+$font-appro: 'Oswald',
+sans-serif;
 
-body{
-	margin: 0;	
-	h1{
-		display: flex;
-		justify-content: center;
-		font: 100% $font-stax;
-		color: #fff;
-		margin: 0;
-		font-size: 30px;
-		padding-top: 20px;
-	}
-	#hello{
-		color: #fff;
-		}
 
-	h2{
-		display: flex;
-		flex-direction: row;
-		font: 100% $font-stax;
-		color: #fff;
-		margin: 0;
-		font-size: 30px;
-		padding-top: 20px;
-	}
-		#overview{
-		width: 300px;
-		color: #fff;
-		}
-	.lead-banner{
-		background: url("images/blackwhite.jpeg") no-repeat;
-		max-width: 100%;
-		height: 100vh;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	.background2{
-		background-image: url('images/goldbrown.png') no-repeat;
-		max-width: 100%;
-		height: 100vh;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	.circle-pix img{
-		display: inline-block;
-		float: right;
-		margin-top: -270px;
-		height: 253px;
-		width: 174px;
-		margin-right: 200px;
-		border-top-left-radius: 10% 10%;
-		border-top-right-radius: 10% 10%;
-		border-bottom-left-radius: 10% 10%;
-		border-bottom-right-radius: 10% 10%;
-	}
-	.wrapper{
- 		margin-right: auto;
- 		margin-left:  auto;
-  		max-width: 800px;
-  		padding-right: 10px;
-  		padding-left: 10px;
-	}
+body {
+    margin: 0;
+    h1 {
+        display: flex;
+        justify-content: center;
+        font: 100% $font-stax;
+        color: $primary-color;
+        margin: 0;
+        font-size: 30px;
+        padding-top: 68px;
+    }
+    #hello {
+        color: $primary-color;
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: row;
+        font: 100% $font-stax;
+        color: $primary-color;
+        margin: 0;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    p {
+        font: 100% $font-stax;
+        justify-content: left;
+        max-width: 100%;
+    }
+    #overview {
+        width: 300px;
+        color: $primary-color;
+    }
+    .lead-banner {
+        background: url("images/pexi.jpeg") no-repeat;
+        max-width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            .wrapper {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 800px;
+        padding-right: 10px;
+        padding-left: 10px;
+    		}
+        }
+    }
 }
-	nav{
-		ul{
-		display: flex;
-		justify-content: space-around;
-		list-style:none;
-		font-family: $font-appro;
-		background-color:#694848;
-		padding: 15px;
-		margin: 0;
-		}
-	a{
-		text-decoration: none;
-	}
-}
 
+.background2 {
+    background-color: #431D25;
+    width: 100%;
+    height: 100vh;
+}
+    .nav-title {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        transition: .3s background-color;
+    }
+        .nav .nav-title.active {
+        background-color: #fff;
+        font: $font-stax;
+        color: #000;
+    }
+	ul{
+		margin: 0;
+        list-style: none;
+        background-color: #000;
+        text-align: center;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 101.2%;
+	
+        li{
+        	display: inline-block;
+        	box-sizing: content-box;
+        	width: 32.3333%;
+    		border-bottom: none;
+    		line-height: 50px;
+    		font-size: 1.4em;
+    		margin-top: -2px;
+
+    			.nav li:hover{
+    				background-color: #f08f90;
+        			transition: .3s background-color;
+    			}
+
+        }
+			.section3 p {
+            	color: #c93756;
+            	text-align: left;
+            	font-size: 12px;
+            	font-family: $font-appro;
+            	margin-left: 200px;
+            	margin-right: 200px;
+        	}
+    }
