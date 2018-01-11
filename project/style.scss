@@ -1,64 +1,69 @@
-$font-stax: 'Lora',
-serif;
-$primary-color: 431D25;
-$font-appro: 'Oswald',
-sans-serif;
+    $font-stax: 'Lora',
+    serif;
+    $primary-color: 431D25;
+    $font-appro: 'Oswald',
+    sans-serif;
+    $font-monts: 'Montserrat',
+    sans-serif;
+    $font-ale: 'Alegreya',
+    serif;
 
-
-body {
-    margin: 0;
-    h1 {
-        display: flex;
-        justify-content: center;
-        font: 100% $font-stax;
-        color: $primary-color;
+    body {
         margin: 0;
-        font-size: 30px;
-        padding-top: 68px;
-    }
-    #hello {
-        color: $primary-color;
-    }
+        h1 {
+            display: flex;
+            justify-content: center;
+            font: 100% $font-stax;
+            color: $primary-color;
+            margin: 0;
+            font-size: 30px;
+            padding-top: 68px;
+        }
+        #hello {
+            color: $primary-color;
+        }
 
-    h2 {
-        display: flex;
-        flex-direction: row;
-        font: 100% $font-stax;
-        color: $primary-color;
-        margin: 0;
-        font-size: 30px;
-        padding-top: 20px;
-    }
+        h2 {
+            display: flex;
+            flex-direction: row;
+            font: 100% $font-stax;
+            color: $primary-color;
+            margin: 0;
+            font-size: 30px;
+            padding-top: 20px;
+        }
 
-    p {
-        font: 100% $font-stax;
-        justify-content: left;
-        max-width: 100%;
-    }
-    #overview {
-        width: 300px;
-        color: $primary-color;
-    }
-    .lead-banner {
-        background: url("images/pexi.jpeg") no-repeat;
-        max-width: 100%;
-        height: 100vh;
-        background-size: cover;
-    }
-    .wrapper {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 800px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .navbar {
-        overflow: hidden;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 50;
+        p {
+            font: 100% $font-stax;
+            justify-content: left;
+            max-width: 100%;
+        }
+        #overview p{
+            width: 300px;
+            color: $primary-color;
+            text-align: justify;
+        }
+        .lead-banner {
+            background: url("images/pexi.jpeg") no-repeat;
+            max-width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+        .wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 800px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+        }
         a {
             float: left;
             display: block;
@@ -67,63 +72,181 @@ body {
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
-            .wrapper {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 800px;
-        padding-right: 10px;
-        padding-left: 10px;
-    		}
         }
     }
-}
 
-.background2 {
-    background-color: #431D25;
-    width: 100%;
-    height: 100vh;
-}
+    .background{
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+    }
+
+        form {
+            text-align: center;
+            margin-left: 16px;
+            margin-top: -5px;
+            padding: 0 auto;
+        }
+            input {
+            display: inline-block;
+            width: 60%;
+            margin-left: -15px;
+            padding-bottom: 20px;
+            margin-top: 5px;
+            font-size: 18px;
+            padding: 5px;
+        }
+         ::placeholder {
+            opacity: 1;
+        }
+
+        input[type-text] {
+            width: 100%;
+            border: 2px solid #aaa;
+            border-radius: 0px;
+            outline: none;
+            box-sizing: border-box;
+            transition: .3s;
+        }
+
+        input[type-email] {
+            width: 50%;
+            border: 2px solid #aaa;
+            border-radius: 0px;
+            outline: none;
+            box-sizing: border-box;
+            transition: .3s;
+        }
+
+        .textarea {
+            color: #c93756;
+            width: 100%;
+            font-size: 18px;
+            border: 2px solid #aaa;
+            border-radius: 0px;
+            outline: none;
+            padding: 8px 0;
+            margin-top: 5px;
+            margin-left: -25px;
+            box-sizing: border-box;
+            transition: .3s;
+        }
+        #button a {
+            font-family: 'Montserrat', sans-serif;
+            top: 15px;
+            text-transform: uppercase;
+            position: relative;
+            color: #ffffff;
+            text-decoration: none;
+            background-color: pink;
+            border: 1px solid #f08f90;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: inline-block;
+            position: center;
+        }
+        #button {
+
+            text-align: center;
+        }
+    
+
     .nav-title {
         text-decoration: none;
         color: #fff;
         display: block;
         transition: .3s background-color;
     }
-        .nav .nav-title.active {
+
+    .nav .nav-title.active {
         background-color: #fff;
         font: $font-stax;
         color: #000;
     }
-	ul{
-		margin: 0;
+
+    ul {
+        margin: 0;
         list-style: none;
         background-color: #000;
         text-align: center;
         padding: 0;
         box-sizing: border-box;
         max-width: 101.2%;
-	
-        li{
-        	display: inline-block;
-        	box-sizing: content-box;
-        	width: 32.3333%;
-    		border-bottom: none;
-    		line-height: 50px;
-    		font-size: 1.4em;
-    		margin-top: -2px;
+    }
 
-    			.nav li:hover{
-    				background-color: #f08f90;
-        			transition: .3s background-color;
-    			}
+    li {
+        display: inline-block;
+        box-sizing: content-box;
+        width: 32.3333%;
+        border-bottom: none;
+        line-height: 50px;
+        font-size: 1.4em;
+        margin-top: -2px;
+    }
 
+    .nav li:hover {
+        background-color: #f08f90;
+        transition: .3s background-color;
+    }
+
+    .section3 {
+        .skillsContainer,
+        .educationContainer {
+            background-color: #fff;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
         }
-			.section3 p {
-            	color: #c93756;
-            	text-align: left;
-            	font-size: 12px;
-            	font-family: $font-appro;
-            	margin-left: 200px;
-            	margin-right: 200px;
-        	}
+        .aboutContainer {
+            background-color: #fff;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            display: none;
+        }
+        .educationContainer {
+            background-color: #fff;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            display: none;
+        }
+        .skillsContainer p,
+        .aboutContainer p,
+        .educationContainer p {
+            color: #001f3f;
+            text-align: left;
+            font-size: 52px;
+            font-family: $font-monts;
+            margin-left: 200px;
+            margin-right: 200px;
+            text-align: center;
+        }
+        .skillsContainer h3,
+        h4,
+        h5 {
+            font: $font-ale;
+            color: #252525;
+            font-size: 60px;
+        }
+        .footer p{
+            font-size: 12px;
+            font-family: $font-stax;
+            padding: 20px 20px;
+            text-align: center;
+            color: #ab2c41;
+        }
+      
     }

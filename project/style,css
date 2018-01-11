@@ -22,9 +22,10 @@ body {
     font: 100% "Lora", serif;
     justify-content: left;
     max-width: 100%; }
-  body #overview {
+  body #overview p {
     width: 300px;
-    color: 431D25; }
+    color: 431D25;
+    text-align: justify; }
   body .lead-banner {
     background: url("images/pexi.jpeg") no-repeat;
     max-width: 100%;
@@ -51,6 +52,11 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px; }
+
+.background {
+  background-color: #000;
+  width: 100%;
+  height: 100vh; }
 
 form {
   text-align: center;
@@ -202,4 +208,4 @@ li {
   text-align: center;
   color: #ab2c41; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style,css.map */

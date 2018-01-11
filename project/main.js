@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".skills-button").click(function() {
         $("#skillsContainer").fadeIn();
         $("#aboutContainer").hide();
-        $("#followContainer").hide();
+        $("#educationContainer").hide();
     })
 
     $(".about-button").click(function() {
@@ -17,6 +17,7 @@ $(document).ready(function() {
         $("#aboutContainer").hide();
         $("#skillsContainer").hide();
     })
+    });
+  
 
 
-});
