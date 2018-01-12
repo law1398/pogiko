@@ -7,32 +7,20 @@
     sans-serif;
     $font-ale: 'Alegreya',
     serif;
+    $font-man: 'Julius Sans One', sans-serif;
 
     body {
         margin: 0;
         h1 {
             display: flex;
             justify-content: center;
-            font: 100% $font-stax;
+            font: 100% $font-man;
             color: $primary-color;
             margin: 0;
             font-size: 30px;
             padding-top: 68px;
+            color: #fff;
         }
-        #hello {
-            color: $primary-color;
-        }
-
-        h2 {
-            display: flex;
-            flex-direction: row;
-            font: 100% $font-stax;
-            color: $primary-color;
-            margin: 0;
-            font-size: 30px;
-            padding-top: 20px;
-        }
-
         p {
             font: 100% $font-stax;
             justify-content: left;
@@ -41,10 +29,10 @@
         #overview p{
             width: 300px;
             color: $primary-color;
-            text-align: justify;
+            
         }
         .lead-banner {
-            background: url("images/pexi.jpeg") no-repeat;
+            background: url("images/M.jpeg") no-repeat;
             max-width: 100%;
             height: 100vh;
             background-size: cover;
@@ -74,83 +62,6 @@
             font-size: 17px;
         }
     }
-
-    .background{
-        background-color: #000;
-        width: 100%;
-        height: 100vh;
-    }
-
-        form {
-            text-align: center;
-            margin-left: 16px;
-            margin-top: -5px;
-            padding: 0 auto;
-        }
-            input {
-            display: inline-block;
-            width: 60%;
-            margin-left: -15px;
-            padding-bottom: 20px;
-            margin-top: 5px;
-            font-size: 18px;
-            padding: 5px;
-        }
-         ::placeholder {
-            opacity: 1;
-        }
-
-        input[type-text] {
-            width: 100%;
-            border: 2px solid #aaa;
-            border-radius: 0px;
-            outline: none;
-            box-sizing: border-box;
-            transition: .3s;
-        }
-
-        input[type-email] {
-            width: 50%;
-            border: 2px solid #aaa;
-            border-radius: 0px;
-            outline: none;
-            box-sizing: border-box;
-            transition: .3s;
-        }
-
-        .textarea {
-            color: #c93756;
-            width: 100%;
-            font-size: 18px;
-            border: 2px solid #aaa;
-            border-radius: 0px;
-            outline: none;
-            padding: 8px 0;
-            margin-top: 5px;
-            margin-left: -25px;
-            box-sizing: border-box;
-            transition: .3s;
-        }
-        #button a {
-            font-family: 'Montserrat', sans-serif;
-            top: 15px;
-            text-transform: uppercase;
-            position: relative;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: pink;
-            border: 1px solid #f08f90;
-            padding: 10px 20px;
-            font-size: 16px;
-            display: inline-block;
-            position: center;
-        }
-        #button {
-
-            text-align: center;
-        }
-    
-
     .nav-title {
         text-decoration: none;
         color: #fff;
@@ -185,8 +96,10 @@
     }
 
     .nav li:hover {
-        background-color: #f08f90;
+        background-color: #e1e1e1;
         transition: .3s background-color;
+        width: 33.3333%;
+        margin: 0;
     }
 
     .section3 {
@@ -241,6 +154,53 @@
             color: #252525;
             font-size: 60px;
         }
+        .section4{
+            display: flex;
+            justify-content: space-between;
+            background-color: #404040;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .section4 h4{
+            text-align: center;
+            color: #e1e1e1;
+            font-size: 30px;
+        }
+        .likes h6, p{
+            margin-left: 5px;
+            color: #C8C8C8;
+            font: 100% $font-monts;
+        }
+        .hobbies h6, p{
+            margin-left: 5px;
+            color: #c8c8c8;
+            font: 100% $font-monts;
+        }
+        .likes{
+            background-color: #404040;
+            margin-top: 10%;
+            width: 50%;
+            height: 50%;
+            border: 2px solid #fff;
+        }
+        .hobbies{
+            vertical-align: top;
+            background-color: #404040;
+            margin-top: 10%;
+            width: 50%;
+            height: 50%;
+            border: 2px solid #fff;
+        }
+         .wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 800px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
         .footer p{
             font-size: 12px;
             font-family: $font-stax;
@@ -248,5 +208,4 @@
             text-align: center;
             color: #ab2c41;
         }
-      
     }
