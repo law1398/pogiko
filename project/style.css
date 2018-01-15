@@ -14,7 +14,7 @@ body {
     justify-content: left;
     max-width: 100%; }
   body #overview p {
-    width: 300px;
+    max-width: 100%;
     color: 431D25; }
   body .lead-banner {
     background: url("images/M.jpeg") no-repeat;
@@ -29,10 +29,11 @@ body {
     padding-left: 10px; }
   body .navbar {
     overflow: hidden;
+    font: 100% font-ale;
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     z-index: 50; }
   body a {
     float: left;
@@ -60,8 +61,8 @@ ul {
   background-color: #000;
   text-align: center;
   padding: 0;
-  box-sizing: border-box;
-  max-width: 101.2%; }
+  max-width: 100%;
+  border: 0; }
 
 li {
   display: inline-block;
@@ -70,101 +71,163 @@ li {
   border-bottom: none;
   line-height: 50px;
   font-size: 1.4em;
-  margin-top: -2px; }
+  margin-top: -2px;
+  border: 0; }
 
 .nav li:hover {
   background-color: #e1e1e1;
   transition: .3s background-color;
-  width: 33.3333%;
-  margin: 0; }
+  width: 32.3333%;
+  margin: 0;
+  box-sizing: border-box; }
 
-.section3 .skillsContainer,
-.section3 .educationContainer {
-  background-color: #fff;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative; }
-.section3 .aboutContainer {
-  background-color: #fff;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  display: none; }
-.section3 .educationContainer {
-  background-color: #fff;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  display: none; }
-.section3 .skillsContainer p,
-.section3 .aboutContainer p,
-.section3 .educationContainer p {
-  color: #001f3f;
-  text-align: left;
-  font-size: 52px;
-  font-family: "Montserrat", sans-serif;
-  margin-left: 200px;
-  margin-right: 200px;
-  text-align: center; }
-.section3 .skillsContainer h3,
-.section3 h4,
-.section3 h5 {
-  font: "Alegreya", serif;
-  color: #252525;
-  font-size: 60px; }
-.section3 .section4 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #404040;
+.section3 {
+  max-width: 100%; }
+  .section3 .skillsContainer {
+    background: url("images/skill.jpeg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    -webkit-filter: grayscale(120%); }
+  .section3 .aboutContainer {
+    background: url("images/mrgeek.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    display: none;
+    opacity: 1;
+    -webkit-filter: grayscale(120%); }
+  .section3 .educationContainer {
+    background: url("images/jru.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: none;
+    -webkit-filter: grayscale(120%); }
+  .section3 .educationContainer p {
+    color: #F8f8f8;
+    text-align: left;
+    font-size: 52px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    max-width: 100%; }
+  .section3 .skillsContainer p {
+    color: #001f3f;
+    text-align: left;
+    font-size: 52px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    max-width: 100%; }
+  .section3 .aboutContainer p {
+    color: #fff;
+    font-size: 52px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    margin-top: 0; }
+
+.section4 {
+  background-color: #404040; }
+  .section4 .section100 {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #404040;
+    width: 100%;
+    height: 101vh;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: top; }
+  .section4 .section100 h4 {
+    text-align: center;
+    color: #e1e1e1;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .section4 .likes h6,
+  .section4 p {
+    margin-left: 5px;
+    color: #C8C8C8;
+    font: 100% "Montserrat", sans-serif; }
+  .section4 .hobbies h6,
+  .section4 p {
+    margin-left: 5px;
+    color: #c8c8c8;
+    font: 100% "Montserrat", sans-serif; }
+  .section4 .weakness h6,
+  .section4 p {
+    margin-left: 5px;
+    color: #c8c8c8;
+    font: 100% "Montserrat", sans-serif; }
+  .section4 .likes {
+    text-align: center;
+    background-color: #404040;
+    margin-top: 20%;
+    width: 49.8%;
+    height: 33.3333%;
+    border: 2px solid #fff;
+    margin: auto;
+    margin-bottom: 15px; }
+  .section4 .hobbies {
+    text-align: center;
+    vertical-align: top;
+    background-color: #404040;
+    margin-top: 1%;
+    width: 49.8%;
+    height: 33.3333%;
+    border: 2px solid #fff;
+    margin: auto; }
+  .section4 .weakness {
+    text-align: center;
+    vertical-align: top;
+    background-color: #404040;
+    margin-top: 1%;
+    width: 49.8%;
+    border: 2px solid #fff;
+    margin: auto;
+    margin-top: 15px; }
+  .section4 .sectiono {
+    float: right;
+    text-align: center;
+    background-color: #404040;
+    margin-top: 0;
+    width: 0%; }
+  .section4 .sectiono h6 {
+    text-align: center;
+    color: #e1e1e1;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .section4 .sectiono p {
+    color: #E1E1E1;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    width: 180px;
+    margin-left: 180px;
+    text-align: center;
+    margin-top: 0; }
+  .section4 .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding-right: 10px;
+    padding-left: 10px; }
+
+.footer {
   width: 100%;
-  height: 100vh;
-  background-size: cover;
-  display: inline-block;
-  vertical-align: top; }
-.section3 .section4 h4 {
-  text-align: center;
-  color: #e1e1e1;
-  font-size: 30px; }
-.section3 .likes h6, .section3 p {
-  margin-left: 5px;
-  color: #C8C8C8;
-  font: 100% "Montserrat", sans-serif; }
-.section3 .hobbies h6, .section3 p {
-  margin-left: 5px;
-  color: #c8c8c8;
-  font: 100% "Montserrat", sans-serif; }
-.section3 .likes {
-  background-color: #404040;
-  margin-top: 10%;
-  width: 50%;
-  height: 50%;
-  border: 2px solid #fff; }
-.section3 .hobbies {
-  vertical-align: top;
-  background-color: #404040;
-  margin-top: 10%;
-  width: 50%;
-  height: 50%;
-  border: 2px solid #fff; }
-.section3 .wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 800px;
-  padding-right: 10px;
-  padding-left: 10px; }
-.section3 .footer p {
+  height: 50px; }
+
+.footer p {
   font-size: 12px;
   font-family: "Lora", serif;
   padding: 20px 20px;

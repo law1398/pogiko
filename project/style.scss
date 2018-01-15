@@ -7,7 +7,8 @@
     sans-serif;
     $font-ale: 'Alegreya',
     serif;
-    $font-man: 'Julius Sans One', sans-serif;
+    $font-man: 'Julius Sans One',
+    sans-serif;
 
     body {
         margin: 0;
@@ -26,10 +27,9 @@
             justify-content: left;
             max-width: 100%;
         }
-        #overview p{
-            width: 300px;
+        #overview p {
+            max-width: 100%;
             color: $primary-color;
-            
         }
         .lead-banner {
             background: url("images/M.jpeg") no-repeat;
@@ -46,10 +46,11 @@
         }
         .navbar {
             overflow: hidden;
+            font: 100% font-ale;
             background-color: #333;
             position: fixed;
             top: 0;
-            width: 100%;
+            max-width: 100%;
             z-index: 50;
         }
         a {
@@ -62,6 +63,7 @@
             font-size: 17px;
         }
     }
+
     .nav-title {
         text-decoration: none;
         color: #fff;
@@ -81,8 +83,8 @@
         background-color: #000;
         text-align: center;
         padding: 0;
-        box-sizing: border-box;
-        max-width: 101.2%;
+        max-width: 100%;
+        border: 0;
     }
 
     li {
@@ -93,52 +95,62 @@
         line-height: 50px;
         font-size: 1.4em;
         margin-top: -2px;
+        border: 0;
     }
 
     .nav li:hover {
         background-color: #e1e1e1;
         transition: .3s background-color;
-        width: 33.3333%;
+        width: 32.3333%;
         margin: 0;
+        box-sizing: border-box;
     }
 
     .section3 {
+        max-width: 100%;
         .skillsContainer,
-        .educationContainer {
-            background-color: #fff;
+        {
+            background: url('images/skill.jpeg') no-repeat;
             background-size: cover;
-            width: 100vw;
             height: 100vh;
             max-width: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
+            -webkit-filter: grayscale(120%);
         }
         .aboutContainer {
-            background-color: #fff;
+            background: url('images/mrgeek.jpg') no-repeat;
             background-size: cover;
-            width: 100vw;
             height: 100vh;
             max-width: 100%;
-            display: flex;
-            flex-direction: column;
             position: relative;
             display: none;
+            opacity: 1;
+            -webkit-filter: grayscale(120%);
         }
         .educationContainer {
-            background-color: #fff;
+            background: url('images/jru.jpg') no-repeat;
             background-size: cover;
-            width: 100vw;
             height: 100vh;
             max-width: 100%;
             display: flex;
             flex-direction: column;
             position: relative;
             display: none;
+            -webkit-filter: grayscale(120%);
         }
-        .skillsContainer p,
-        .aboutContainer p,
         .educationContainer p {
+            color: #F8f8f8;
+            text-align: left;
+            font-size: 52px;
+            font-family: $font-monts;
+            margin-left: 200px;
+            margin-right: 200px;
+            text-align: center;
+            max-width: 100%;
+        }
+        .skillsContainer p {
             color: #001f3f;
             text-align: left;
             font-size: 52px;
@@ -146,66 +158,130 @@
             margin-left: 200px;
             margin-right: 200px;
             text-align: center;
+            max-width: 100%;
         }
-        .skillsContainer h3,
-        h4,
-        h5 {
-            font: $font-ale;
-            color: #252525;
-            font-size: 60px;
+        .aboutContainer p {
+            color: #fff;
+            font-size: 52px;
+            font-family: $font-monts;
+            margin-left: 200px;
+            margin-right: 200px;
+            text-align: center;
+            margin-top: 0;
         }
-        .section4{
+    }
+
+    .section4 {
+        background-color: #404040;
+        .section100 {
+            margin: auto;
             display: flex;
             justify-content: space-between;
             background-color: #404040;
             width: 100%;
-            height: 100vh;
+            height: 101vh;
             background-size: cover;
             display: inline-block;
             vertical-align: top;
         }
-        .section4 h4{
+        .section100 h4 {
             text-align: center;
             color: #e1e1e1;
             font-size: 30px;
+            margin-bottom: 30px;
         }
-        .likes h6, p{
+        .likes h6,
+        p {
             margin-left: 5px;
             color: #C8C8C8;
             font: 100% $font-monts;
         }
-        .hobbies h6, p{
+        .hobbies h6,
+        p {
             margin-left: 5px;
             color: #c8c8c8;
             font: 100% $font-monts;
         }
-        .likes{
-            background-color: #404040;
-            margin-top: 10%;
-            width: 50%;
-            height: 50%;
-            border: 2px solid #fff;
+        .weakness h6,
+        p {
+            margin-left: 5px;
+            color: #c8c8c8;
+            font: 100% $font-monts;
         }
-        .hobbies{
+
+        .likes {
+            text-align: center;
+            background-color: #404040;
+            margin-top: 20%;
+            width: 49.8%;
+            height: 33.3333%;
+            border: 2px solid #fff;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        .hobbies {
+
+            text-align: center;
             vertical-align: top;
             background-color: #404040;
-            margin-top: 10%;
-            width: 50%;
-            height: 50%;
+            margin-top: 1%;
+            width: 49.8%;
+            height: 33.3333%;
             border: 2px solid #fff;
+            margin: auto;
         }
-         .wrapper {
+        .weakness {
+            text-align: center;
+            vertical-align: top;
+            background-color: #404040;
+            margin-top: 1%;
+            width: 49.8%;
+
+            border: 2px solid #fff;
+            margin: auto;
+            margin-top: 15px;
+        }
+        .sectiono {
+            float: right;
+            text-align: center;
+
+            background-color: #404040;
+            margin-top: 0;
+            width: 0%;
+        }
+        .sectiono h6 {
+            text-align: center;
+            color: #e1e1e1;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .sectiono p {
+            color: #E1E1E1;
+            font-size: 15px;
+            font-family: $font-monts;
+            width: 180px;
+            margin-left: 180px;
+            text-align: center;
+            margin-top: 0;
+        }
+        .wrapper {
             margin-right: auto;
             margin-left: auto;
             max-width: 800px;
             padding-right: 10px;
             padding-left: 10px;
         }
-        .footer p{
-            font-size: 12px;
-            font-family: $font-stax;
-            padding: 20px 20px;
-            text-align: center;
-            color: #ab2c41;
-        }
+    }
+
+    .footer {
+        width: 100%;
+        height: 50px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        font-family: $font-stax;
+        padding: 20px 20px;
+        text-align: center;
+        color: #ab2c41;
     }
