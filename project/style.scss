@@ -18,7 +18,7 @@
             font: 100% $font-man;
             color: $primary-color;
             margin: 0;
-            font-size: 30px;
+            font-size: 5.9vw;
             padding-top: 68px;
             color: #fff;
         }
@@ -47,11 +47,12 @@
         .navbar {
             overflow: hidden;
             font: 100% font-ale;
-            background-color: #333;
+            background-color: #66666;
             position: fixed;
             top: 0;
             max-width: 100%;
             z-index: 50;
+            margin-left: 10px;
         }
         a {
             float: left;
@@ -60,7 +61,14 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 2vw;
+            margin-left: 10px;
+        }
+        .wrapper{
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 800px;
+            padding-right: 10px; 
         }
     }
 
@@ -143,7 +151,7 @@
         .educationContainer p {
             color: #F8f8f8;
             text-align: left;
-            font-size: 52px;
+            font-size: 5.9vw;
             font-family: $font-monts;
             margin-left: 200px;
             margin-right: 200px;
@@ -153,7 +161,7 @@
         .skillsContainer p {
             color: #001f3f;
             text-align: left;
-            font-size: 52px;
+            font-size: 5.9vw;
             font-family: $font-monts;
             margin-left: 200px;
             margin-right: 200px;
@@ -162,7 +170,7 @@
         }
         .aboutContainer p {
             color: #fff;
-            font-size: 52px;
+            font-size: 5.9vw;
             font-family: $font-monts;
             margin-left: 200px;
             margin-right: 200px;
@@ -236,7 +244,6 @@
             background-color: #404040;
             margin-top: 1%;
             width: 49.8%;
-
             border: 2px solid #fff;
             margin: auto;
             margin-top: 15px;
@@ -244,7 +251,6 @@
         .sectiono {
             float: right;
             text-align: center;
-
             background-color: #404040;
             margin-top: 0;
             width: 0%;

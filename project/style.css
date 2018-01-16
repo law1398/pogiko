@@ -6,7 +6,7 @@ body {
     font: 100% "Julius Sans One", sans-serif;
     color: 431D25;
     margin: 0;
-    font-size: 30px;
+    font-size: 5.9vw;
     padding-top: 68px;
     color: #fff; }
   body p {
@@ -30,11 +30,12 @@ body {
   body .navbar {
     overflow: hidden;
     font: 100% font-ale;
-    background-color: #333;
+    background-color: #66666;
     position: fixed;
     top: 0;
     max-width: 100%;
-    z-index: 50; }
+    z-index: 50;
+    margin-left: 10px; }
   body a {
     float: left;
     display: block;
@@ -42,7 +43,13 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px; }
+    font-size: 2vw;
+    margin-left: 10px; }
+  body .wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+    padding-right: 10px; }
 
 .nav-title {
   text-decoration: none;
@@ -114,7 +121,7 @@ li {
   .section3 .educationContainer p {
     color: #F8f8f8;
     text-align: left;
-    font-size: 52px;
+    font-size: 5.9vw;
     font-family: "Montserrat", sans-serif;
     margin-left: 200px;
     margin-right: 200px;
@@ -123,7 +130,7 @@ li {
   .section3 .skillsContainer p {
     color: #001f3f;
     text-align: left;
-    font-size: 52px;
+    font-size: 5.9vw;
     font-family: "Montserrat", sans-serif;
     margin-left: 200px;
     margin-right: 200px;
@@ -131,7 +138,7 @@ li {
     max-width: 100%; }
   .section3 .aboutContainer p {
     color: #fff;
-    font-size: 52px;
+    font-size: 5.9vw;
     font-family: "Montserrat", sans-serif;
     margin-left: 200px;
     margin-right: 200px;
