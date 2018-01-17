@@ -236,9 +236,42 @@ li {
 
 .footer p {
   font-size: 12px;
-  font-family: "Lora", serif;
+  font-family: "Julius Sans One", sans-serif;
   padding: 20px 20px;
   text-align: center;
-  color: #ab2c41; }
+  color: #000; }
+
+.contactsec {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #000;
+  margin-top: -20px; }
+  .contactsec .contact, .contactsec .email, .contactsec .address {
+    text-align: center;
+    background-color: #000;
+    margin-top: 0;
+    max-width: 50%;
+    height: 150px;
+    border-bottom: 2px solid #fff;
+    margin: auto;
+    margin-bottom: -8px; }
+  .contactsec .contact h2 {
+    color: #e1e1e1;
+    margin-top: 20px;
+    font-size: 2vw; }
+  .contactsec .contact p {
+    color: #e1e1e1; }
+  .contactsec .email h2 {
+    color: #e1e1e1;
+    margin-top: 20px;
+    font-size: 2vw; }
+  .contactsec .email p {
+    color: #e1e1e1; }
+  .contactsec .address h2 {
+    color: #e1e1e1;
+    margin-top: 20px;
+    font-size: 2vw; }
+  .contactsec .address p {
+    color: #e1e1e1; }
 
 /*# sourceMappingURL=style.css.map */
