@@ -1,0 +1,100 @@
+    .section4 {
+        background-color: #404040;
+        .section100 {
+            margin: auto;
+            
+            justify-content: space-between;
+            background-color: #404040;
+            width: 100%;
+            height: 101vh;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .section100 h4 {
+            text-align: center;
+            color: #e1e1e1;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .likes h6,
+        p {
+            margin-left: 5px;
+            color: #C8C8C8;
+            font: 100% $font-monts;
+        }
+        .hobbies h6,
+        p {
+            margin-left: 5px;
+            color: #c8c8c8;
+            font: 100% $font-monts;
+        }
+        .weakness h6,
+        p {
+            margin-left: 5px;
+            color: #c8c8c8;
+            font: 100% $font-monts;
+        }
+
+        .likes {
+            text-align: center;
+            background-color: #404040;
+            margin-top: 20%;
+            width: 49.8%;
+            height: 100ew;
+            border: 2px solid #fff;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        .hobbies {
+
+            text-align: center;
+            vertical-align: top;
+            background-color: #404040;
+            margin-top: 1%;
+            width: 49.8%;
+            height: 100ew;
+            border: 2px solid #fff;
+            margin: auto;
+        }
+        .weakness {
+            text-align: center;
+            vertical-align: top;
+            background-color: #404040;
+            margin-top: 1%;
+            width: 49.8%;
+            height: 100ew;
+            border: 2px solid #fff;
+            margin: auto;
+            margin-top: 15px;
+        }
+        .sectiono {
+            float: right;
+            text-align: center;
+            background-color: #404040;
+            margin-top: 0;
+            width: 0%;
+        }
+        .sectiono h6 {
+            text-align: center;
+            color: #e1e1e1;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .sectiono p {
+            color: #E1E1E1;
+            font-size: 15px;
+            font-family: $font-monts;
+            width: 180px;
+            margin-left: 180px;
+            text-align: center;
+            margin-top: 0;
+        }
+        .wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 800px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }

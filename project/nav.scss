@@ -1,0 +1,117 @@
+            .navbar {
+                overflow: hidden;
+                font: 100% font-ale;
+                background-color: #66666;
+                position: fixed;
+                top: 0;
+                max-width: 100%;
+                z-index: 50;
+                margin-left: 10px;
+            }
+
+            .nav-title {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                transition: .3s;
+            }
+
+            .nav .nav-title.active {
+                background-color: #fff;
+                font: $font-stax;
+                color: #000;
+            }
+
+            ul {
+                margin: 0;
+                list-style: none;
+                background-color: #000;
+                text-align: center;
+                padding: 0;
+                max-width: 100%;
+                border: 0;
+            }
+
+            li {
+                display: inline-block;
+                box-sizing: content-box;
+                width: 32.3333%;
+                border-bottom: none;
+                line-height: 50px;
+                font-size: 1.4em;
+                margin-top: -2px;
+                border: 0;
+            }
+
+            .nav li:hover {
+                background-color: #e1e1e1;
+                transition: .3s background-color;
+                width: 32.3333%;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .section3 {
+                max-width: 100%;
+                .skillsContainer,
+                {
+                    background: url('images/skill.jpeg') no-repeat;
+                    background-size: cover;
+                    height: 100vh;
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    -webkit-filter: grayscale(120%);
+                }
+                .aboutContainer {
+                    background: url('images/mrgeek.jpg') no-repeat;
+                    background-size: cover;
+                    height: 100vh;
+                    max-width: 100%;
+                    position: relative;
+                    display: none;
+                    opacity: 1;
+                    -webkit-filter: grayscale(120%);
+                }
+                .educationContainer {
+                    background: url('images/jru.jpg') no-repeat;
+                    background-size: cover;
+                    height: 100vh;
+                    max-width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    display: none;
+                    -webkit-filter: grayscale(120%);
+                }
+                .educationContainer p {
+                    color: #F8f8f8;
+                    text-align: left;
+                    font-size: 5.9vw;
+                    font-family: $font-monts;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                    text-align: center;
+                    max-width: 100%;
+                }
+                .skillsContainer p {
+                    color: #001f3f;
+                    text-align: left;
+                    font-size: 5.9vw;
+                    font-family: $font-monts;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                    text-align: center;
+                    max-width: 100%;
+                }
+                .aboutContainer p {
+                    color: #fff;
+                    font-size: 5.9vw;
+                    font-family: $font-monts;
+                    margin-left: 200px;
+                    margin-right: 200px;
+                    text-align: center;
+                    margin-top: 0;
+                }
+            }

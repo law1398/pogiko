@@ -1,3 +1,8 @@
+@media screen and (max-width 700px) {
+  .lead-banner {
+    width: 50%;
+    height: 50%;
+    background-color: #fff; } }
 body {
   margin: 0; }
   body h1 {
@@ -17,25 +22,12 @@ body {
     max-width: 100%;
     color: 431D25; }
   body .lead-banner {
-    background: url("images/M.jpeg") no-repeat;
     max-width: 100%;
     height: 100vh;
-    background-size: cover; }
-  body .wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 800px;
-    padding-right: 10px;
-    padding-left: 10px; }
-  body .navbar {
-    overflow: hidden;
-    font: 100% font-ale;
-    background-color: #66666;
-    position: fixed;
-    top: 0;
-    max-width: 100%;
-    z-index: 50;
-    margin-left: 10px; }
+    background: url("images/M.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0; }
   body a {
     float: left;
     display: block;
@@ -51,11 +43,21 @@ body {
     max-width: 800px;
     padding-right: 10px; }
 
+.navbar {
+  overflow: hidden;
+  font: 100% font-ale;
+  background-color: #66666;
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+  z-index: 50;
+  margin-left: 10px; }
+
 .nav-title {
   text-decoration: none;
   color: #fff;
   display: block;
-  transition: .3s background-color; }
+  transition: .3s; }
 
 .nav .nav-title.active {
   background-color: #fff;
@@ -149,7 +151,6 @@ li {
   background-color: #404040; }
   .section4 .section100 {
     margin: auto;
-    display: flex;
     justify-content: space-between;
     background-color: #404040;
     width: 100%;
@@ -182,7 +183,7 @@ li {
     background-color: #404040;
     margin-top: 20%;
     width: 49.8%;
-    height: 33.3333%;
+    height: 100ew;
     border: 2px solid #fff;
     margin: auto;
     margin-bottom: 15px; }
@@ -192,7 +193,7 @@ li {
     background-color: #404040;
     margin-top: 1%;
     width: 49.8%;
-    height: 33.3333%;
+    height: 100ew;
     border: 2px solid #fff;
     margin: auto; }
   .section4 .weakness {
@@ -201,6 +202,7 @@ li {
     background-color: #404040;
     margin-top: 1%;
     width: 49.8%;
+    height: 100ew;
     border: 2px solid #fff;
     margin: auto;
     margin-top: 15px; }
@@ -246,7 +248,9 @@ li {
   height: 100vh;
   background-color: #000;
   margin-top: -20px; }
-  .contactsec .contact, .contactsec .email, .contactsec .address {
+  .contactsec .contact,
+  .contactsec .email,
+  .contactsec .address {
     text-align: center;
     background-color: #000;
     margin-top: 0;
@@ -272,6 +276,7 @@ li {
     margin-top: 20px;
     font-size: 2vw; }
   .contactsec .address p {
-    color: #e1e1e1; }
+    color: #e1e1e1;
+    text-transform: lowercase; }
 
 /*# sourceMappingURL=style.css.map */
